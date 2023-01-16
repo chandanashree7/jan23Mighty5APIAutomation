@@ -17,6 +17,7 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 		<dependency>
 			<groupId>net.masterthought</groupId>
@@ -119,7 +120,7 @@
 						<configuration>
 							<projectName>cucumberReporting</projectName>
 							<skip>false</skip>
-							<outputDirectory>${project.build.directory}</outputDirectory>
+							<outputDirectory>${project.build.directory}/cucumber-reports.html</outputDirectory>
 							<inputDirectory>${project.build.directory}</inputDirectory>
 							<jsonFiles>
 								<param>**/*.json</param>

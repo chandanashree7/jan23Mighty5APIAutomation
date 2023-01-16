@@ -1,7 +1,7 @@
 Feature: To Verify Save Program API automation with Rest Assured
 
   Scenario Outline: Test Save program API call
-    Given A Save Service with URL and path
+    Given The service with URL and save path
     When "<programName>","<programDescription>","<programStatus>",creationTime,lastModTime are modified
     And POST request is made
     Then Save programId
@@ -10,5 +10,5 @@ Feature: To Verify Save Program API automation with Rest Assured
 
     Examples: 
       | programName                      | programDescription | programStatus |
-      | Jan23-Mighty5testers-SDET-005-15 | API warriors-01    | Active        |
-      | Jan23-Mighty5testers-SDET-005-16 | API warriors-02    | Active        |
+      | Jan23-Mighty5testers-SDET-005-30 | API warriors-01    | Active        |
+      | Jan23-Mighty5testers-SDET-005-31 | API warriors-02    | Active        |
